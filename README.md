@@ -1,2 +1,2 @@
-**This project is to start programming in C**
+#This project is to start programming in C
 Hello world
