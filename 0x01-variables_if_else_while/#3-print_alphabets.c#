@@ -13,11 +13,10 @@ int main(void)
 		putchar(letter);
 		if (letter == 'z')
 		{
-			letter = 'A';
-			limit = 'Z';
-			putchar(letter);
+			letter = 'A';it = 'Z';
 		}
-		letter++;
+		else
+			letter++;
 	}
 	putchar('\n');
 	return (0);
