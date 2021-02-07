@@ -8,6 +8,7 @@ int main(void)
 {
 	char letter = 'a';
 	char limit = 'z';
+
 	while (letter <= limit)
 	{
 		putchar(letter);
