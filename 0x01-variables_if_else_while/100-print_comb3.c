@@ -6,17 +6,25 @@
 **/
 int main(void)
 {
-	int j = 0;
 
-	while (j <= 99)
+	int j = 0;
+	int i;
+	while (j <= 9)
 	{
-		putchar(j / 10 + '0');
-		putchar(j % 10 + '0');
-		if (j != 99)
+		for (i = j; i < 10; i++)
 		{
-			putchar(',');
-			putchar(' ');
+			if ( j != i)
+			{
+				putchar(j + '0');
+				putchar(i + '0');
+			}
+			if (i > 0 && j != 9 && i != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
+
 		j++;
 	}
 	putchar('\n');
